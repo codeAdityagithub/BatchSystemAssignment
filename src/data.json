@@ -1,0 +1,92 @@
+{
+    "navbar": {
+        "logoText": "uifry",
+        "list": ["Home", "About Us", "Pricing", "Features"],
+        "button": { "text": "Download", "link": "/download" }
+    },
+    "hero": {
+        "headline": "Make The Best Financial Decisions",
+        "subheadline": "Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.",
+        "ctaButtons": [
+            {
+                "text": "Get Started",
+                "link": "#"
+            },
+            {
+                "text": "Watch Video",
+                "link": "#"
+            }
+        ]
+    },
+    "feature": {
+        "title": "Uifry Premium",
+        "image": "/featurePhone.png",
+        "features": [
+            {
+                "title": "Budgeting Intervals",
+                "desc": "Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor."
+            },
+            {
+                "title": "Budgeting Intervals",
+                "desc": "Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor."
+            },
+            {
+                "title": "Budgeting Intervals",
+                "desc": "Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor."
+            }
+        ]
+    },
+    "advantage": [
+        {
+            "title": "Why Choose Uifry?",
+            "image": "/advantageImage1.png",
+            "card": {
+                "title": "Clever Notifications",
+                "desc": "Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien, suspendisse aliquam."
+            }
+        },
+        {
+            "image": "/advantageImage2.png",
+            "card": {
+                "title": "Fully Customizable",
+                "desc": "Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien, suspendisse aliquam."
+            }
+        }
+    ],
+    "testimonial": {
+        "title": "What Our Customers Say About Us?",
+        "image": "/testimonialImage.png",
+        "testimonials": [
+            {
+                "name": "User One",
+                "feedback": "This app is fantastic! It has changed my life.",
+                "desc": "Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien, suspendisse aliquam.",
+                "avatar": "https://i.pravatar.cc/100?img=1"
+            },
+            {
+                "name": "User Two",
+                "feedback": "I can't imagine my daily routine without this app.",
+                "desc": "Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien, suspendisse aliquam.",
+                "avatar": "https://i.pravatar.cc/100?img=2"
+            },
+            {
+                "name": "User Three",
+                "feedback": "Very good! It has changed my life.",
+                "desc": "Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien, suspendisse aliquam.",
+                "avatar": "https://i.pravatar.cc/100?img=3"
+            }
+        ]
+    },
+    "pricing": [
+        {
+            "plan": "Basic",
+            "price": "$9.99/month",
+            "features": ["Feature A", "Feature B", "Feature C"]
+        },
+        {
+            "plan": "Premium",
+            "price": "$19.99/month",
+            "features": ["Feature A", "Feature B", "Feature C", "Feature D"]
+        }
+    ]
+}
