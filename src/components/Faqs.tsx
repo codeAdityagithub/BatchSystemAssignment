@@ -21,7 +21,7 @@ const Faqs = ({ faq }: Props) => {
             <p className="text-accent tracking-widest text-center sm:text-left">
                 FAQ
             </p>
-            <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 text-center sm:text-left max-w-lg">
+            <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 text-center text-foreground sm:text-left max-w-lg">
                 {faq.title}
             </h2>
             <div className="w-full grid grid-flow-col md:grid-rows-3 grid-rows-6 gap-4">

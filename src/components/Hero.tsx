@@ -21,7 +21,7 @@ const Hero = ({ hero }: Props) => {
                     height={350}
                     className={`absolute -top-20 right-1/4`}
                 />
-                <h1 className="text-4xl sm:text-5xl font-extrabold text-center lg:text-left z-10 max-w-2xl">
+                <h1 className="text-4xl sm:text-5xl text-foreground font-extrabold text-center lg:text-left z-10 max-w-2xl">
                     {hero.headline}
                 </h1>
 

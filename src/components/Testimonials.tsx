@@ -17,7 +17,7 @@ const Testimonials = ({ testimonial }: Props) => {
             <p className="text-accent tracking-wide text-center">
                 TESTIMONIALS
             </p>
-            <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 text-center max-w-lg">
+            <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 text-center max-w-lg text-foreground">
                 {testimonial.title}
             </h2>
             <div className="flex items-center w-full gap-8">
@@ -32,7 +32,7 @@ const Testimonials = ({ testimonial }: Props) => {
                 </div>
                 <div className="flex-1 flex flex-col gap-8 lg:items-start items-center relative">
                     <div className="flex flex-col gap-4 max-w-xl ">
-                        <h3 className="text-2xl sm:text-3xl font-bold">
+                        <h3 className="text-2xl sm:text-3xl font-bold text-foreground">
                             {
                                 testimonial.testimonials[activeTestimonial]
                                     .feedback

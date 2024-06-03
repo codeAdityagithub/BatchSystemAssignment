@@ -26,7 +26,7 @@ const Advantages = ({ advantage }: Props) => {
                 </div>
                 <div className="flex-1 flex flex-col lg:items-start items-center relative gap-4">
                     <p className="text-accent tracking-widest">ADVANTAGES</p>
-                    <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+                    <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-foreground">
                         {advantage[0].title}
                     </h2>
                     <div className="flex flex-col gap-6 max-w-xl">
@@ -34,7 +34,7 @@ const Advantages = ({ advantage }: Props) => {
                             <span className="p-2 rounded-full bg-accent">
                                 <FaRegBell className="m-auto text-primary-foreground" />
                             </span>
-                            <h3 className="text-xl sm:text-2xl font-bold">
+                            <h3 className="text-xl sm:text-2xl font-bold text-foreground">
                                 {advantage[0].card.title}
                             </h3>
                         </div>
@@ -60,7 +60,7 @@ const Advantages = ({ advantage }: Props) => {
                             <span className="p-2 rounded-full bg-accent">
                                 <PiStarFour className="m-auto text-primary-foreground" />
                             </span>
-                            <h3 className="text-xl sm:text-2xl font-bold">
+                            <h3 className="text-xl sm:text-2xl font-bold text-foreground">
                                 {advantage[1].card.title}
                             </h3>
                         </div>

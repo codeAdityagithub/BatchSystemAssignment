@@ -41,7 +41,7 @@ const Features = ({ feature }: Props) => {
                     className="absolute top-0 -right-40 z-0"
                 />
                 <p className="text-accent tracking-widest">FEATURES</p>
-                <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+                <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-foreground">
                     {feature.title}
                 </h2>
                 <div className="flex flex-col gap-6 max-w-xl">
@@ -49,7 +49,7 @@ const Features = ({ feature }: Props) => {
                         <div className="space-y-1" key={`feature${ind}`}>
                             <div className="flex items-center gap-3">
                                 {featureIcons[ind]}
-                                <h3 className="text-xl font-medium">
+                                <h3 className="text-xl font-medium text-foreground">
                                     {feature.title}
                                 </h3>
                             </div>

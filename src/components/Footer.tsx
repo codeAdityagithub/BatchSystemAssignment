@@ -10,7 +10,7 @@ type Props = {
 };
 const Footer = ({ footerElements }: Props) => {
     return (
-        <div className="w-full pt-16 ">
+        <div className="w-full pt-16">
             <div className="relative w-full">
                 <Image
                     className="absolute -top-32 -left-36"
@@ -34,7 +34,7 @@ const Footer = ({ footerElements }: Props) => {
                     height={500}
                 />
             </div>
-            <div className="flex flex-wrap items-start justify-between gap-8 *:flex-1 *:min-w-fit py-20 fading-border">
+            <div className="flex flex-wrap items-start justify-between text-foreground gap-8 *:flex-1 *:min-w-fit py-20 fading-border">
                 <div className="flex flex-col items-start gap-4">
                     <div className="flex items-center gap-1">
                         <Image
@@ -75,10 +75,10 @@ const Footer = ({ footerElements }: Props) => {
                 <div className="flex flex-col items-start gap-4">
                     <h2 className="text-2xl font-semibold">NewsLetter</h2>
                     <p className="font-medium">Stay Up To Date</p>
-                    <div className="">
+                    <div className=" space-x-1">
                         <input
                             type="text"
-                            className="px-6 py-3 placeholder:text-foreground-muted"
+                            className="px-6 py-3 placeholder:text-gray-500"
                             placeholder="Your Email"
                         />
                         <button type="button" className="btn-primary">
