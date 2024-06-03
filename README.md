@@ -15,3 +15,10 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Design 
+I have used React-icons for all the icons in this website.
+
+I have used tailwind css for styling the components. 
+
+I use getStaticProps to generate a static page on build time using next js SSG.
