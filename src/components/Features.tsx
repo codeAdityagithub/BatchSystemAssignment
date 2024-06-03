@@ -9,9 +9,9 @@ type Props = {
     feature: FeatureData;
 };
 const featureIcons = [
-    <Icon1 className="text-accent text-xl" />,
-    <Icon2 className="text-accent text-xl" />,
-    <Icon3 className="text-accent text-xl" />,
+    <Icon1 key="icon1" className="text-accent text-xl" />,
+    <Icon2 key="icon2" className="text-accent text-xl" />,
+    <Icon3 key="icon3" className="text-accent text-xl" />,
 ];
 const Features = ({ feature }: Props) => {
     return (
