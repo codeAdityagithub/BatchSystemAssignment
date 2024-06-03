@@ -1,7 +1,13 @@
 {
     "navbar": {
         "logoText": "uifry",
-        "list": ["Home", "About Us", "Pricing", "Features"],
+        "list": [
+            { "title": "Home", "href": "#home" },
+            { "title": "Features", "href": "#features" },
+            { "title": "Advantages", "href": "#advantages" },
+            { "title": "Testimonials", "href": "#testimonials" },
+            { "title": "FAQ's", "href": "#faqs" }
+        ],
         "button": { "text": "Download", "link": "/download" }
     },
     "hero": {
@@ -77,16 +83,51 @@
             }
         ]
     },
-    "pricing": [
-        {
-            "plan": "Basic",
-            "price": "$9.99/month",
-            "features": ["Feature A", "Feature B", "Feature C"]
-        },
-        {
-            "plan": "Premium",
-            "price": "$19.99/month",
-            "features": ["Feature A", "Feature B", "Feature C", "Feature D"]
-        }
-    ]
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "faqs": [
+            {
+                "title": "The Best Financial Accounting App Ever!",
+                "ans": "Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris."
+            },
+            {
+                "title": "The Best Financial Accounting App Ever!",
+                "ans": "Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris."
+            },
+            {
+                "title": "The Best Financial Accounting App Ever!",
+                "ans": "Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris."
+            },
+            {
+                "title": "The Best Financial Accounting App Ever!",
+                "ans": "Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris."
+            },
+            {
+                "title": "The Best Financial Accounting App Ever!",
+                "ans": "Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris."
+            },
+            {
+                "title": "The Best Financial Accounting App Ever!",
+                "ans": "Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris."
+            }
+        ]
+    },
+    "footerElements": {
+        "Links": [
+            { "text": "Home", "href": "#" },
+            { "text": "About Us", "href": "#" },
+            { "text": "Bookings", "href": "#" },
+            { "text": "Blog", "href": "#" }
+        ],
+        "Legal": [
+            { "text": "Terms of Use", "href": "#" },
+            { "text": "Privacy Policy", "href": "#" },
+            { "text": "Cookie Policy", "href": "#" }
+        ],
+        "Product": [
+            { "text": "Take Tour", "href": "#" },
+            { "text": "Live Chat", "href": "#" },
+            { "text": "Reviews", "href": "#" }
+        ]
+    }
 }

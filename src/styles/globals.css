@@ -3,11 +3,26 @@
 @tailwind utilities;
 
 @layer components {
-    a.active {
+    /* not working for some reason */
+    /* .active {
         color: "var(--accent)";
-    }
+    } */
     .btn-primary {
         @apply bg-primary text-primary-foreground px-6 py-3 rounded-sm;
+    }
+    .fading-border {
+        position: relative;
+        width: 100%;
+        z-index: 10;
+    }
+    .fading-border::before {
+        z-index: -10;
+        content: "";
+        border-right: 300px solid transparent;
+        border-bottom: 1px solid var(--foreground-muted);
+        border-left: 300px solid transparent;
+        position: absolute;
+        inset: 0;
     }
 }
 @layer base {

@@ -6,6 +6,8 @@ import { REM } from "next/font/google";
 import Features from "@/components/Features";
 import Advantages from "@/components/Advantages";
 import Testimonials from "@/components/Testimonials";
+import Faqs from "@/components/Faqs";
+import Footer from "@/components/Footer";
 
 const rem = REM({ subsets: ["latin"] });
 export const getStaticProps = async () => {
@@ -22,14 +24,16 @@ export default function Home({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
     return (
         <main
-            className={`${rem.className} h-screen max-h-screen w-full overflow-y-auto overflow-x-hidden mx-auto p-4 pt-0 bg-background`}
+            className={`${rem.className} scroll-smooth scroll-pt-[80px] h-screen max-h-screen w-full overflow-y-auto overflow-x-hidden mx-auto pt-0 bg-background`}
         >
-            <div className="max-w-[1024px] mx-auto space-y-20 lg:space-y-0">
-                <Navbar nav={data.navbar} />
+            <Navbar nav={data.navbar} />
+            <div className="max-w-[1024px] px-10 mx-auto flex flex-col gap-20 lg:gap-10">
                 <Hero hero={data.hero} />
                 <Features feature={data.feature} />
                 <Advantages advantage={data.advantage} />
                 <Testimonials testimonial={data.testimonial} />
+                <Faqs faq={data.faq} />
+                <Footer footerElements={data.footerElements} />
             </div>
         </main>
     );

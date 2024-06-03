@@ -15,7 +15,7 @@ const featureIcons = [
 ];
 const Features = ({ feature }: Props) => {
     return (
-        <div className="flex w-full gap-8 mt-10">
+        <div className="flex w-full gap-8 mt-10" id="features">
             <div className="flex-1 relative hidden lg:block">
                 <Image
                     src={feature.image}
@@ -24,16 +24,15 @@ const Features = ({ feature }: Props) => {
                     height={500}
                     className="w-full max-w-xl z-0"
                 />
-                {/* <RedBlob pos=" /> */}
                 <Image
                     src="/redBlob.svg"
                     alt="/blob"
                     width={350}
                     height={350}
-                    className="absolute top-1/4 -left-20 z-0"
+                    className="absolute top-1/4 -left-28 z-0"
                 />
             </div>
-            <div className="flex-1 flex flex-col lg:items-start gap-4A items-center lg:pt-12 relative *:z-10">
+            <div className="flex-1 flex flex-col lg:items-start gap-4 items-center lg:pt-12 relative *:z-10">
                 <Image
                     src="/redBlob.svg"
                     alt="/blob"
@@ -42,10 +41,12 @@ const Features = ({ feature }: Props) => {
                     className="absolute top-0 -right-40 z-0"
                 />
                 <p className="text-accent tracking-widest">FEATURES</p>
-                <h2 className="text-4xl font-bold mb-4">{feature.title}</h2>
-                <div className="flex flex-col gap-4 max-w-xl">
+                <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+                    {feature.title}
+                </h2>
+                <div className="flex flex-col gap-6 max-w-xl">
                     {feature.features.map((feature, ind) => (
-                        <div className="space-y-1" key={feature.title}>
+                        <div className="space-y-1" key={`feature${ind}`}>
                             <div className="flex items-center gap-3">
                                 {featureIcons[ind]}
                                 <h3 className="text-xl font-medium">

@@ -8,7 +8,10 @@ type Props = {
 };
 const Hero = ({ hero }: Props) => {
     return (
-        <div className="w-full flex items-center justify-center mt-16">
+        <div
+            className="w-full flex items-center justify-center mt-16"
+            id="home"
+        >
             <div className="flex-1 flex flex-col items-center lg:items-start gap-4 relative">
                 {/* <RedBlob pos="-top-0 right-1/4" /> */}
                 <Image
@@ -18,14 +21,14 @@ const Hero = ({ hero }: Props) => {
                     height={350}
                     className={`absolute -top-20 right-1/4`}
                 />
-                <h1 className="text-5xl font-extrabold text-center lg:text-left z-10 max-w-2xl">
+                <h1 className="text-4xl sm:text-5xl font-extrabold text-center lg:text-left z-10 max-w-2xl">
                     {hero.headline}
                 </h1>
 
                 <p className="text-foreground-muted font-light text-center max-w-2xl lg:text-left z-10">
                     {hero.subheadline}
                 </p>
-                <div className="w-full flex gap-1 justify-center lg:justify-start">
+                <div className="w-full flex gap-1 *:min-w-fit flex-wrap justify-center lg:justify-start">
                     <button className="btn-primary flex items-center">
                         {hero.ctaButtons[0].text}
                         <HiArrowLongRight className="ml-2 text-xl" />

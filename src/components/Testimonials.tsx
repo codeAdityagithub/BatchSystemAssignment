@@ -13,11 +13,11 @@ const Testimonials = ({ testimonial }: Props) => {
     const [activeTestimonial, setActiveTestimonial] = useState(0);
 
     return (
-        <div className=" flex flex-col items-center gap-4">
+        <div className=" flex flex-col items-center gap-4" id="testimonials">
             <p className="text-accent tracking-wide text-center">
                 TESTIMONIALS
             </p>
-            <h2 className="text-4xl font-extrabold mb-4 text-center max-w-lg">
+            <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 text-center max-w-lg">
                 {testimonial.title}
             </h2>
             <div className="flex items-center w-full gap-8">
@@ -32,13 +32,13 @@ const Testimonials = ({ testimonial }: Props) => {
                 </div>
                 <div className="flex-1 flex flex-col gap-8 lg:items-start items-center relative">
                     <div className="flex flex-col gap-4 max-w-xl ">
-                        <h3 className="text-3xl font-bold">
+                        <h3 className="text-2xl sm:text-3xl font-bold">
                             {
                                 testimonial.testimonials[activeTestimonial]
                                     .feedback
                             }
                         </h3>
-                        <p className="text-foreground-muted">
+                        <p className="text-foreground-muted text-sm">
                             {testimonial.testimonials[activeTestimonial].desc}
                         </p>
                     </div>
@@ -47,7 +47,7 @@ const Testimonials = ({ testimonial }: Props) => {
                             <span
                                 key={testimonial.name}
                                 onClick={() => setActiveTestimonial(ind)}
-                                className={`rounded-full transition-transform ${
+                                className={`rounded-full transition-transform cursor-pointer  ${
                                     activeTestimonial === ind
                                         ? "scale-125"
                                         : "grayscale"
